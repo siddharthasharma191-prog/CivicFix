@@ -1,0 +1,19 @@
+{
+  "name": "civicfix-final",
+  "version": "1.4.0",
+  "private": true,
+  "description": "CivicFix educational civic issue reporting and management prototype \u2014 final integration audit",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check lib/database.js && node --check lib/validation.js && node --check lib/port.js && node --check lib/status.js && node --check lib/admin-auth.js && node --check lib/login-rate-limiter.js && node --check lib/priority.js && node --check lib/duplicates.js && node --check public/app.js && node --check tests/phase4.test.js && node --check tests/phase5.test.js && node --check tests/app.test.js && node --check tests/phase2.test.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "helmet": "8.1.0"
+  }
+}
